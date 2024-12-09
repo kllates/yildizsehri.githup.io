@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>biotech website using tailwdincss and threejs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body class="bg-[#0a192f] text-[#64ffda] overflow-x-hidden cursor-none font-mono">
+    <div class="custom-cursor hidden md:block"></div>
+    <canvas id="canvas" class="fixed top-0 left-0 w-full h-full -z-10"></canvas>
+
+    <div class="relative z-10">
+        <!-- Hero Section -->
+        <section class="min-h-screen flex items-center justify-center px-4 md:px-8">
+            <div class="max-w-6xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-[#64ffda] mb-4 drop-shadow-[0_0_10px_rgba(100,255,218,0.8)]">
+                    NeuraSynth Biotech
+                </h1>
+                <p class="text-md md:text-xl lg:text-2xl mb-12 text-[#64ffda]/80">
+                    Pioneering the Convergence of Neural Science and Genetic Engineering
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-6 backdrop-blur-sm bg-[#64ffda]/5 rounded-lg border border-[#64ffda]/20">
+                        <div class="text-3xl lg:text-4xl font-bold text-[#64ffda] mb-2">15+</div>
+                        <p class="text-lg text-[#94a3b8]">Years of Innovation</p>
+                    </div>
+                    <div class="p-6 backdrop-blur-sm bg-[#64ffda]/5 rounded-lg border border-[#64ffda]/20">
+                        <div class="text-3xl lg:text-4xl font-bold text-[#64ffda] mb-2">500k+</div>
+                        <p class="text-lg text-[#94a3b8]">Genetic Sequences Analyzed</p>
+                    </div>
+                    <div class="p-6 backdrop-blur-sm bg-[#64ffda]/5 rounded-lg border border-[#94a3b8]/20">
+                        <div class="text-3xl lg:text-4xl font-bold text-[#64ffda] mb-2">98%</div>
+                        <p class="text-lg text-[#94a3b8]">Success Rate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-20 px-4 md:px-8">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#64ffda] mb-8">About Us</h2>
+                <p class="text-lg mb-12 text-[#94a3b8]">
+                    At NeuraSynth Biotech, we're at the forefront of merging neuroscience with genetic engineering. Our groundbreaking research has led to revolutionary advancements in:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="group p-6 backdrop-blur-sm bg-[#64ffda]/5 rounded-lg border border-[#64ffda]/20 transition-all duration-300 hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-[#64ffda] mb-4">Neural Mapping</h3>
+                        <p class="text-[#8892b0]">Utilizing quantum computing to map neural pathways with unprecedented precision.</p>
+                    </div>
+                    <div class="group p-6 backdrop-blur-sm bg-[#64ffda]/5 rounded-lg border border-[#64ffda]/20 transition-all duration-300 hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-[#64ffda] mb-4">Gene Therapy</h3>
+                        <p class="text-[#8892b0]">Pioneering CRISPR-based techniques for targeted genetic modifications.</p>
+                    </div>
+                    <div class="group p-6 backdrop-blur-sm bg-[#64ffda]/5 rounded-lg border border-[#64ffda]/20 transition-all duration-300 hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-[#64ffda] mb-4">Bio-Integration</h3>
+                        <p class="text-[#8892b0]">Developing seamless interfaces between biological systems and advanced technology.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section class="py-20 px-4 md:px-8">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#64ffda] mb-8">Our Clients</h2>
+                <p class="text-lg mb-12 text-[#8892b0]">Trusted by leading research institutions and healthcare providers worldwide:</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                    <!-- Client 1 -->
+                    <div class="group relative">
+                        <div class="absolute inset-0 bg-[#64ffda]/20 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
+                        <div class="relative p-6 backdrop-blur-sm bg-[#0a192f]/50 rounded-lg border border-[#64ffda]/20 h-full flex flex-col">
+                            <div class="w-16 h-16 mb-4 rounded-full bg-[#64ffda]/20 flex items-center justify-center group-hover:animate-slow-spin">
+                                <div class="w-12 h-12 rounded-full border-2 border-[#64ffda] flex items-center justify-center">
+                                    GHI
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold text-[#64ffda] mb-2">Global Health Institute</h3>
+                            <p class="text-sm mb-4 flex-grow text-[#8892b0]">Pioneering research in global health solutions and genetic therapies.</p>
+                            <div class="flex justify-between text-sm text-[#64ffda]/60">
+                                <span>Partner since 2018</span>
+                                <span>50+ Joint Projects</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Client 2 -->
+                    <div class="group relative">
+                        <div class="absolute inset-0 bg-[#64ffda]/20 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
+                        <div class="relative p-6 backdrop-blur-sm bg-[#0a192f]/50 rounded-lg border border-[#64ffda]/20 h-full flex flex-col">
+                            <div class="w-16 h-16 mb-4 rounded-full bg-[#64ffda]/20 flex items-center justify-center group-hover:animate-slow-spin">
+                                <div class="w-12 h-12 rounded-full border-2 border-[#64ffda] flex items-center justify-center">
+                                    NTL
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold text-[#64ffda] mb-2">NeuroTech Labs</h3>
+                            <p class="text-sm mb-4 flex-grow text-[#8892b0]">Leading innovation in neural interface technology and brain-computer integration.</p>
+                            <div class="flex justify-between text-sm text-[#64ffda]/60">
+                                <span>Partner since 2020</span>
+                                <span>25+ Breakthroughs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Client 3 -->
+                    <div class="group relative">
+                        <div class="absolute inset-0 bg-[#64ffda]/20 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
+                        <div class="relative p-6 backdrop-blur-sm bg-[#0a192f]/50 rounded-lg border border-[#64ffda]/20 h-full flex flex-col">
+                            <div class="w-16 h-16 mb-4 rounded-full bg-[#64ffda]/20 flex items-center justify-center group-hover:animate-slow-spin">
+                                <div class="w-12 h-12 rounded-full border-2 border-[#64ffda] flex items-center justify-center">
+                                    GRC
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold text-[#64ffda] mb-2">Genome Research Center</h3>
+                            <p class="text-sm mb-4 flex-grow text-[#8892b0]">Cutting-edge genomics research and DNA sequencing advancements.</p>
+                            <div class="flex justify-between text-sm text-[#64ffda]/60">
+                                <span>Partner since 2015</span>
+                                <span>100+ Publications</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Client 4 -->
+                    <div class="group relative">
+                        <div class="absolute inset-0 bg-[#64ffda]/20 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
+                        <div class="relative p-6 backdrop-blur-sm bg-[#0a192f]/50 rounded-lg border border-[#64ffda]/20 h-full flex flex-col">
+                            <div class="w-16 h-16 mb-4 rounded-full bg-[#64ffda]/20 flex items-center justify-center group-hover:animate-slow-spin">
+                                <div class="w-12 h-12 rounded-full border-2 border-[#64ffda] flex items-center justify-center">
+                                    HLC
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold text-[#64ffda] mb-2">Health Life Center</h3>
+                            <p class="text-sm mb-4 flex-grow text-[#8892b0]">Bringing advanced gene therapies to healthcare facilities worldwide.</p>
+                            <div class="flex justify-between text-sm text-[#64ffda]/60">
+                                <span>Partner since 2012</span>
+                                <span>300+ Gene Therapies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'></script>
+<script src='https://cdn.tailwindcss.com/3.4.5'></script><script  src="./script.js"></script>
+
+</body>
+</html>
